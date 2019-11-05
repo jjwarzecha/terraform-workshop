@@ -1,0 +1,13 @@
+# local directories and keys
+**/.terraform/*
+**/.idea/*
+**/.ssh/*
+**/.oci/*
+env-vars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars

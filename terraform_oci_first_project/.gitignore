@@ -1,0 +1,7 @@
+**.tfstate
+**.tfstate.*
+**.terraform/
+**.ssh/
+**.oci/
+env-vars
+

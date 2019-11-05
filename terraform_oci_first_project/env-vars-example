@@ -1,0 +1,16 @@
+######## how2
+#After updating those fields and copying it to env-var
+#please source this file, like in example below:
+#
+#> source ./env-vars
+#
+#verify with "env", you should be able to see your variables
+############
+
+export TF_VAR_tenancy_ocid="ocid..."
+export TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaa..."
+export TF_VAR_fingerprint="c6:31:01:0e:87:5e:ae:..."
+export TF_VAR_private_key_path="./.oci/oci_api_key.pem"
+export TF_VAR_region="eu-frankfurt-1"
+export TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaa..."
+
