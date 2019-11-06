@@ -113,5 +113,5 @@ variable "license_model" {
 }
 
 variable "node_count" {
-  default = "2"
+  default = "1"
 }
