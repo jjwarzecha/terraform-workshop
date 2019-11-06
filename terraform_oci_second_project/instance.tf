@@ -32,7 +32,7 @@ resource "oci_core_instance" "bm_instance" {
   availability_domain = "${data.oci_identity_availability_domain.ad.name}"
   compartment_id      = "${var.compartment_ocid}"
   display_name        = "${var.prefix}MBInstance"
-  shape               = "BM.Standard1.36"
+  shape               = "BM.Standard2.52"
 
   create_vnic_details {
     subnet_id        = "${oci_core_subnet.test_subnet.id}"
