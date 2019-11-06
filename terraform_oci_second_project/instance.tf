@@ -38,7 +38,7 @@ resource "oci_core_instance" "bm_instance" {
     subnet_id        = "${oci_core_subnet.test_subnet.id}"
     display_name     = "Primaryvnic"
     assign_public_ip = true
-    hostname_label   = "tfexampleinstance${count.index}"
+    hostname_label   = "bminstance"
   }
 
   source_details {
