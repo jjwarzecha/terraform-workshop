@@ -21,10 +21,10 @@ resource "oci_database_db_system" "test_db_system" {
     display_name = "${var.db_home_display_name}"
   }
 
-  db_system_options {
-    #GridCluster for testing purposes
-    storage_management = "LVM"
-  }
+//  db_system_options {
+//    #LVM as alternative to GridCluster for testing purposes
+//    storage_management = "LVM"
+//  }
 
   disk_redundancy         = "${var.db_disk_redundancy}"
   shape                   = "${var.db_system_shape}"

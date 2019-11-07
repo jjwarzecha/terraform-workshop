@@ -1,6 +1,6 @@
 variable "compartment_ocid" {}
 
-variable "prefix" { default = "jj-"}
+variable "prefix" { default = "fm-"}
 
 variable "vcn_cidr_block" {
     default = "10.1.0.0/16"
@@ -15,7 +15,7 @@ variable "num_instances" {
 }
 
 variable "instance_shape" {
-    default = "VM.Standard.B1.4"
+    default = "VM.Standard2.4"
 }
 
 variable "instance_image_ocid" {
@@ -90,6 +90,6 @@ resource "oci_core_subnet" "test_subnet" {
 
 data "oci_identity_availability_domain" "ad" {
     compartment_id = "${var.tenancy_ocid}"
-    ad_number      = 3
+    ad_number      = 1
 }
 

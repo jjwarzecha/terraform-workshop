@@ -49,8 +49,7 @@ variable "db_system_shape" {
 }
 
 variable "db_edition" {
-  # ENTERPRISE_EDITION_EXTREME_PERFORMANCE required for RAC!!!
-  default = "ENTERPRISE_EDITION"
+  default = "ENTERPRISE_EDITION_EXTREME_PERFORMANCE"
 }
 
 variable "db_admin_password" {
@@ -78,11 +77,11 @@ variable "sparse_diskgroup" {
 }
 
 variable "db_system_display_name" {
-  default = "MyTFDBSystem"
+  default = "RACDBSys"
 }
 
 variable "hostname" {
-  default = "myoradb"
+  default = "racdb"
 }
 
 variable "host_user_name" {
@@ -102,7 +101,7 @@ variable "db_workload" {
 }
 
 variable "pdb_name" {
-  default = "pdbName"
+  default = "pdbRAC"
 }
 
 variable "data_storage_size_in_gb" {
@@ -114,5 +113,5 @@ variable "license_model" {
 }
 
 variable "node_count" {
-  default = "1"
+  default = "2"
 }

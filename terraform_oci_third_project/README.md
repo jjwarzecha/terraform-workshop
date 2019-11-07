@@ -1,4 +1,4 @@
-# terraform_oci_second_project
+# terraform_oci_third_project
 
 Infrastructure resources:
 - 1 VCN
